@@ -4,7 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 
 from config import Config
-from handlers import BotHandlers
+from bot.handlers import BotHandlers
 
 
 async def main():

@@ -1,7 +1,7 @@
 import aiohttp
 
-from errors import CityNotFoundError, WeatherApiError
-from models import City
+from weather.errors import CityNotFoundError, WeatherApiError
+from weather.models import City
 
 
 class Geocoder:

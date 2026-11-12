@@ -3,8 +3,8 @@ from datetime import date
 
 import aiohttp
 
-from errors import WeatherApiError
-from models import City, CurrentWeather, DayForecast
+from weather.errors import WeatherApiError
+from weather.models import City, CurrentWeather, DayForecast
 
 
 class WeatherProvider(ABC):

@@ -13,3 +13,6 @@ __pycache__/
 
 # сохранённые города пользователей
 users.json
+
+# кэш pytest
+.pytest_cache/
