@@ -10,3 +10,12 @@ class CityNotFoundError(WeatherBotError):
 class WeatherApiError(WeatherBotError):
     def __init__(self):
         super().__init__("Сервис погоды сейчас недоступен. Попробуйте позже.")
+
+
+class NoCityError(WeatherBotError):
+    def __init__(self):
+        super().__init__("Сначала укажите свой город: /city Москва\nИли напишите город прямо в команде: /now Москва")
+
+
+class BadArgumentError(WeatherBotError):
+    """Пользователь неправильно ввел аргументы команды. Текст подсказывает, как правильно."""
